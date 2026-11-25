@@ -1,0 +1,7 @@
+object_mapper_node:
+  ros__parameters:
+    use_sim_time: true
+    map_frame: map
+    association_distance: 0.6   # metres: two detections closer than this = same object
+    min_observations: 3         # ignore objects seen fewer times (false positives)
+    goal_standoff: 0.6          # metres between the Nav2 goal and the object

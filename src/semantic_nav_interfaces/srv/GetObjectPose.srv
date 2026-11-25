@@ -1,0 +1,6 @@
+# Ask the mapper where an object of a given class is.
+string label
+---
+bool found
+SemanticObject object
+geometry_msgs/PoseStamped goal   # a reachable pose next to the object, facing it
