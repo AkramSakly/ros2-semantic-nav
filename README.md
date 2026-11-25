@@ -84,14 +84,14 @@ Tests: `colcon test && colcon test-result --verbose`
 
 Each milestone has a GitHub issue with the tasks and hints. Look for `TODO(Mx)` in the code.
 
-- [ ] **M0: Setup.** Docker image builds, GitHub Actions CI runs `colcon build` + `colcon test`.
-- [ ] **M1: Simulation and navigation.** Gazebo + SLAM Toolbox + Nav2 run; custom world with objects YOLO can recognise; map saved.
-- [ ] **M2: Object detection.** `detector_node` publishes YOLOv8 detections and an annotated image.
-- [ ] **M3: Detection → map projection (C++).** Pixel bearing + LiDAR range + TF gives the object position in `map`. Unit tested.
-- [ ] **M4: Semantic map.** Data association, fusion, false-positive filtering, RViz markers.
-- [ ] **M5: Go to object.** `/get_object_pose` computes a goal in front of the object; the commander drives there with Nav2.
-- [ ] **M6: Exploration and speed (stretch).** Explore when the object is unknown; ONNX Runtime inference and FPS comparison.
-- [ ] **M7: Evaluation and demo.** Object position error vs Gazebo ground truth, navigation success rate, demo GIF/video.
+- [ ] **M0: Setup.** ([#1](https://github.com/AkramSakly/ros2-semantic-nav/issues/1)) Docker image builds, GitHub Actions CI runs `colcon build` + `colcon test`.
+- [ ] **M1: Simulation and navigation.** ([#2](https://github.com/AkramSakly/ros2-semantic-nav/issues/2)) Gazebo + SLAM Toolbox + Nav2 run; custom world with objects YOLO can recognise; map saved.
+- [ ] **M2: Object detection.** ([#3](https://github.com/AkramSakly/ros2-semantic-nav/issues/3)) `detector_node` publishes YOLOv8 detections and an annotated image.
+- [ ] **M3: Detection → map projection (C++).** ([#4](https://github.com/AkramSakly/ros2-semantic-nav/issues/4)) Pixel bearing + LiDAR range + TF gives the object position in `map`. Unit tested.
+- [ ] **M4: Semantic map.** ([#5](https://github.com/AkramSakly/ros2-semantic-nav/issues/5)) Data association, fusion, false-positive filtering, RViz markers.
+- [ ] **M5: Go to object.** ([#6](https://github.com/AkramSakly/ros2-semantic-nav/issues/6)) `/get_object_pose` computes a goal in front of the object; the commander drives there with Nav2.
+- [ ] **M6: Exploration and speed (stretch).** ([#7](https://github.com/AkramSakly/ros2-semantic-nav/issues/7)) Explore when the object is unknown; ONNX Runtime inference and FPS comparison.
+- [ ] **M7: Evaluation and demo.** ([#8](https://github.com/AkramSakly/ros2-semantic-nav/issues/8)) Object position error vs Gazebo ground truth, navigation success rate, demo GIF/video.
 
 ## Results
 
